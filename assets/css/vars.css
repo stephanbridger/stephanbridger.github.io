@@ -1,0 +1,23 @@
+:root {
+  color-scheme: light dark;
+
+  /* DEFAULT (light mode) */
+  --bg1: white;
+  --bg2: #eee;
+  --bg3: #ddd;
+  --fg1: #222;
+  --fg2: #888;
+  --link: #79d;
+}
+
+/* DARK MODE OVERRIDES */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg1: #222;
+    --bg2: #111;
+    --bg3: black;
+    --fg1: #ddd;
+    --fg2: #888;
+    --link: #9bf;
+  }
+}

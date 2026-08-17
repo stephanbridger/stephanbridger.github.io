@@ -1,0 +1,5 @@
+{{ $isBlock := eq .Type "block" }}
+{{ $opts := dict "output" "htmlAndMathml" "displayMode" $isBlock }}
+
+{{ transform.ToMath .Inner $opts }}
+{{ .Page.Store.Set "hasMath" true }}
